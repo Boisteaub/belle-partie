@@ -1,0 +1,18 @@
+:root { --fond: #FFF6D6; --carte: #FFFFFF; --texte: #2A2112; --doux: #6B5E45; --soleil: #FFC93C; --lien: #8A5A00; }
+@media (prefers-color-scheme: dark) {
+  :root { --fond: #16130D; --carte: #242018; --texte: #F5EEDC; --doux: #BFB39A; --lien: #FFC93C; }
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--fond); color: var(--texte); font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+header { background: var(--soleil); padding: 14px 16px; border-radius: 0 0 24px 24px; }
+header a { display: inline-flex; align-items: center; gap: 12px; color: #2A2112; font-weight: 800; font-size: 22px; text-decoration: none; }
+header img { border-radius: 12px; }
+main { max-width: 720px; margin: 24px auto; padding: 24px 20px; background: var(--carte); border-radius: 24px; }
+h1 { font-size: 28px; line-height: 1.2; margin: 0 0 8px; }
+h2 { font-size: 20px; margin: 28px 0 6px; }
+.date { color: var(--doux); margin: 0 0 16px; }
+.intro { font-size: 18px; }
+a { color: var(--lien); }
+.bouton { display: inline-block; background: var(--soleil); color: #2A2112; font-weight: 700; padding: 12px 22px; border-radius: 999px; text-decoration: none; }
+footer { text-align: center; color: var(--doux); font-size: 14px; padding: 8px 16px 32px; }
+@media (max-width: 760px) { main { margin: 16px; } }
